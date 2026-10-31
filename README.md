@@ -7,9 +7,9 @@ https://psub.888005.xyz
 ### 视频教程
 https://youtu.be/X7CC5jrgazo
 
-后端环境变量名：`BACKEND`  变量类型：`TXT`   变量值（即.后端）：`https://url.v1.mk/` 或 `https://api.v1.mk/`
+后端环境变量名：`BACKEND` 变量类型：`TXT` 变量值（后端）：`https://url.v1.mk/` 或 `https://api.v1.mk/`
 
-强制要求后端保留 TLS 证书验证：环境变量名：`SKIP_CERT_VERIFY`  变量类型：`TXT`  变量值：`false` 或 `true`
+强制要求后端保留 TLS 证书验证：环境变量名：`SKIP_CERT_VERIFY` 变量类型：`TXT` 变量值：`false` 或 `true`
 
 KV或R2变量名：`SUB_BUCKET`
 
