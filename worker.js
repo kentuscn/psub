@@ -3024,6 +3024,11 @@ var src_default = {
     }
     const newUrl = replacedURIs.join("|");
     url.searchParams.set("url", newUrl);
+    // 强制要求后端保留 TLS 证书验证 变量名：SKIP_CERT_VERIFY 变量值：false 或 true
+    url.searchParams.set(
+      "scv",
+      env.SKIP_CERT_VERIFY === "true" ? "true" : "false"
+    );
     const modifiedRequest = new Request(backend + url.pathname + url.search, request);
     const rpResponse = await fetch(modifiedRequest);
     for (const key of keys) {
